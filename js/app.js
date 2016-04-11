@@ -8,16 +8,16 @@ import ClassNames from 'classnames';
 import {Block} from 'react-essence';
 
 // Components
-import MobileHeader from './components/header';
-import MobileFooter from './components/footer';
+import HotelloHeader from './components/header';
+import HotelloBrowser from './components/browser';
+import HotelloReservation from './components/reservation';
 
 
-class Mobile extends React.Component {
+class Hotello extends React.Component {
 	render() {
         return(
         	<Block>
-        		<MobileHeader />        		
-                <MobileFooter />
+        		<HotelloHeader />
         	</Block>
         );
     }
@@ -25,7 +25,7 @@ class Mobile extends React.Component {
 
 ReactDOM.render(
 	<Block>
-		<Mobile />
+		<Hotello />
 	</Block>
 	,
 	document.querySelector('.app')

@@ -3,7 +3,7 @@ import ClassNames from 'classnames';
 
 import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem} from 'react-essence';
 
-class MobileHeader extends React.Component {
+class HotelloHeader extends React.Component {
 
     render() {
         return (
@@ -13,8 +13,8 @@ class MobileHeader extends React.Component {
 						<List type={'inline'}>
 							<ListItem>
 								<Text type={'a'} href={'#Home'} className={'e-text-uppercase e-text-white'}>Mobile</Text>
-							</ListItem>																			
-						</List>						
+							</ListItem>
+						</List>
 					</Block>
 				</Block>
 			</AppBar>
@@ -22,4 +22,4 @@ class MobileHeader extends React.Component {
     }
 }
 
-module.exports = MobileHeader;
+module.exports = HotelloHeader;
