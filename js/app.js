@@ -18,6 +18,8 @@ class Hotello extends React.Component {
         return(
         	<Block>
         		<HotelloHeader />
+						<HotelloBrowser />
+						<HotelloReservation />
         	</Block>
         );
     }
