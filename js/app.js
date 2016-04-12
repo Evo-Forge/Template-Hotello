@@ -10,6 +10,8 @@ import {Block} from 'react-essence';
 // Components
 import HotelloHeader from './components/header';
 import HotelloBrowser from './components/browser';
+import HotelloLogin from './components/login';
+import HotelloRegister from './components/register';
 import HotelloReservation from './components/reservation';
 
 
@@ -18,6 +20,8 @@ class Hotello extends React.Component {
         return(
         	<Block>
         		<HotelloHeader />
+        		<HotelloLogin />
+        		<HotelloRegister />
         	</Block>
         );
     }

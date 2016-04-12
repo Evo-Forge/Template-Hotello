@@ -1,0 +1,66 @@
+.hotello-register {
+  height: 600px;
+  .e-align-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .e-align-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .e-padding-30 {
+    padding: 30px;
+  }
+  .e-left {
+    float: left!important;
+  }
+  .e-right {
+    float: right!important;
+  }
+  .close-btn {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+  }
+  .e-input-group {
+    .e-input {
+      border-bottom: 1px solid #b9b9b9;
+    }
+  }
+  .separator {
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    padding: 6px;
+    &:before {
+      display: inline-block;
+      content: '';
+      background: #b9b9b9;
+      height: 1px;
+      width: 44%;
+      margin-top: 4%;
+      margin-bottom: 0;
+      margin-left: 10.2%;
+      position: absolute;
+      z-index: 1;
+    }
+    &:after {
+      display: inline-block;
+      content: '';
+      background: #b9b9b9;
+      height: 1px;
+      width: 44%;
+      margin-top: 4%;
+      margin-bottom: 0;
+      margin-left: -54%;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
