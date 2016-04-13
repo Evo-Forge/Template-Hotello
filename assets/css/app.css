@@ -31,6 +31,9 @@ body {
 .HotelloBrowser {
   font-size: 14px;
 }
+.HotelloBrowser a:focus {
+  outline: none;
+}
 .HotelloBrowser .logo {
   width: 100%;
   height: 520px;
@@ -45,6 +48,9 @@ body {
 }
 .HotelloBrowser .flex.wrap {
   flex-wrap: wrap;
+}
+.HotelloBrowser .flex.start {
+  justify-content: flex-start;
 }
 .HotelloBrowser .tab-look ul {
   padding-left: 0;
@@ -137,6 +143,9 @@ body {
 .HotelloBrowser .padding-col {
   padding: 0 5px;
 }
+.HotelloBrowser .padding-col.brick-25 {
+  padding-top: 5px;
+}
 .HotelloBrowser .discount {
   text-decoration: line-through;
 }
@@ -144,7 +153,104 @@ body {
   width: 100%;
 }
 .HotelloBrowser .icon-look {
+  width: 28px;
+  padding-top: 2px;
   border-radius: 50%;
+}
+.HotelloBrowser .icon-look:focus {
+  background-color: #8bc34a;
+  outline: none;
+  text-decoration: underline;
+}
+.HotelloBrowser .border-input-icon {
+  width: 80%;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  height: 40px;
+}
+.HotelloBrowser .border-input-icon .align-to {
+  line-height: 41px;
+}
+.HotelloBrowser .with-icon {
+  width: 90%;
+  display: inline-block;
+}
+.HotelloBrowser .with-icon .e-input {
+  border: 0;
+}
+.HotelloBrowser .with-icon .e-input:not(textarea):not(select) {
+  padding-bottom: 16px;
+  padding-left: 6px;
+}
+.HotelloBrowser .with-icon.e-input-group .e-input:focus {
+  border-bottom: 0;
+  margin-top: -4px;
+}
+.HotelloBrowser .with-icon.e-input-group .e-input-efects:before {
+  display: none;
+}
+.HotelloBrowser .with-icon .e-input:focus ~ .e-input-efects:after,
+.HotelloBrowser .with-icon .e-input.focus ~ .e-input-efects:after {
+  display: none;
+}
+.HotelloBrowser .with-icon.date-picker {
+  width: 35%;
+}
+.HotelloBrowser .icon-in-input {
+  width: 10%;
+  display: inline-block;
+  text-align: left;
+  padding-top: 8px;
+  font-size: 18px;
+}
+.HotelloBrowser .search-btn {
+  width: 80%;
+  height: 40px;
+}
+.HotelloBrowser .padding-form {
+  padding: 5px 0;
+}
+.HotelloBrowser .padding-15 {
+  padding: 15px;
+}
+.HotelloBrowser .margin-top-15 {
+  margin-top: 15px;
+}
+.HotelloBrowser .logo-img {
+  width: 41px;
+}
+.HotelloBrowser .margin-t-para {
+  margin-top: -7px;
+}
+.HotelloBrowser .icon-close {
+  border-radius: 50%;
+}
+.HotelloBrowser .icon-close.fab-mini {
+  box-shadow: none;
+}
+.HotelloBrowser .icon-close.fab-mini:hover:not(.flat) {
+  box-shadow: none;
+}
+.HotelloBrowser .icon-close.fab-mini i {
+  font-size: 24px;
+}
+.HotelloBrowser .icon-close.e-btn-fab-mini {
+  margin: 0;
+}
+.HotelloBrowser .icon-close.e-btn-fab-mini.close-btn-align {
+  margin-top: 20px;
+}
+.HotelloBrowser .icon-close:focus {
+  outline: none;
+}
+.HotelloBrowser .margin-15 {
+  margin: 15px;
+}
+.HotelloBrowser .margin-b-para {
+  margin-bottom: -7px;
+}
+.HotelloBrowser .no-padding {
+  padding: 0;
 }
 footer {
   width: 100%;

@@ -2,9 +2,11 @@ import React from 'react';
 import ClassNames from 'classnames';
 
 import {Block,
+        Btn,
         Divider,
         Icon,
         Image,
+        Input,
         Tab,
         Text
       } from 'react-essence';
@@ -215,10 +217,18 @@ import {Block,
               </Block>
 
               <Block className={'e-background-blue-grey-800 full-w e-text-center align-row padding-row'}>
-                <Icon name={"action-visibility"} className={"e-text-grey-100 e-title icon-look e-background-light-green-500"} />
-                <Icon name={"action-search"} className={"e-text-grey-100 e-title icon-look"} />
-                <Icon name={"maps-local-offer"} className={"e-text-grey-100 e-title icon-look"} />
-                <Icon name={"action-account-circle"} className={"e-text-grey-100 e-title icon-look"} />
+                <Text type={'a'} classes={'e-text-center e-body1 icon-look e-background-light-green-500'}>
+                  <Icon name={"action-visibility"} className={"e-text-grey-100 e-title"} />
+                </Text>
+                <Text type={'a'} classes={'e-text-center e-body1 icon-look'}>
+                  <Icon name={"action-search"} className={"e-text-grey-100 e-title"} />
+                </Text>
+                <Text type={'a'} classes={'e-text-center e-body1 icon-look'}>
+                  <Icon name={"maps-local-offer"} className={"e-text-grey-100 e-title"} />
+                </Text>
+                <Text type={'a'} classes={'e-text-center e-body1 icon-look'}>
+                  <Icon name={"action-account-circle"} className={"e-text-grey-100 e-title"} />
+                </Text>
               </Block>
             </Block>
           </Block>)
@@ -243,6 +253,270 @@ class HotelloBrowser extends React.Component {
                   data={tabs}
                   classes={'e-background-blue-grey-900 e-text-grey-50 tab-look'}
                   indicator={'e-background-blue-grey-200'}/>
+              </Block>
+
+              <Block>
+                <Block classes={'e-background-blue-grey-900 flex'}>
+                  <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100'}>Search Result:
+                    <Text type={'span'} classes={'e-text-center e-subhead e-text-light-green-500'}> 35 Hotels</Text>
+                  </Text>
+                </Block>
+
+                <Block classes={'flex wrap padding-form'}>
+                  <Block classes={'border-input-icon'}>
+                    <Icon name={"communication-location-on"} className={"e-text-light-green-500 e-right icon-in-input"} />
+                    <Input type={'text'} name={'label'} placeholder={'Cluj-Napoca, RO'} classes={'with-icon e-text-blue-grey-900'}/>
+                  </Block>
+                  <Block classes={'border-input-icon'}>
+                    <Icon name={"action-event"} className={"e-text-light-green-500 e-right icon-in-input"} />
+                    <Input type={'text'} name={'label'} placeholder={'15 MAY 2016'} classes={'with-icon e-text-blue-grey-900 date-picker'}/>
+                    <Text type={'span'} classes={'e-text-center e-body1 e-text-light-green-500 align-to'}>TO</Text>
+                    <Input type={'text'} name={'label'} placeholder={'17 MAY 2016'} classes={'with-icon e-text-blue-grey-900 date-picker'}/>
+                  </Block>
+                  <Block classes={'border-input-icon'}>
+                    <Icon name={"maps-hotel"} className={"e-text-light-green-500 e-right icon-in-input"} />
+                    <Input type={'text'} name={'label'} placeholder={'1 ROOM'} classes={'with-icon e-text-blue-grey-900'}/>
+                  </Block>
+                  <Btn label={'Search Hotel'} ripple={false} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 search-btn'} />
+                </Block>
+
+                <Block classes={'bg-pear flex padding-15'}>
+                  <Block classes={'brick-75'}>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-200 e-caption inline'}>RATING: 85 din 100</Text>
+                    </Block>
+                    <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Pear Tree Hotel</Text>
+                  </Block>
+                  <Block classes={'brick-25'}>
+                    <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$679</b></Text>
+                    <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
+                  </Block>
+                </Block>
+
+                <Block classes={'bg-apricot flex padding-15'}>
+                  <Block classes={'brick-75'}>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-200 e-caption inline'}>RATING: 85 din 100</Text>
+                    </Block>
+                    <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Apricot Tree Hotel</Text>
+                  </Block>
+                  <Block classes={'brick-25'}>
+                    <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$1000</b></Text>
+                    <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
+                  </Block>
+                </Block>
+
+                <Block classes={'bg-peach flex padding-15'}>
+                  <Block classes={'brick-75'}>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-200 e-caption inline'}>RATING: 85 din 100</Text>
+                    </Block>
+                    <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Peach Tree Hotel</Text>
+                  </Block>
+                  <Block classes={'brick-25'}>
+                    <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$889</b></Text>
+                    <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
+                  </Block>
+                </Block>
+
+                <Block classes={'bg-plum flex padding-15'}>
+                  <Block classes={'brick-75'}>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-200 e-caption inline'}>RATING: 85 din 100</Text>
+                    </Block>
+                    <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Plum Tree Hotel</Text>
+                  </Block>
+                  <Block classes={'brick-25'}>
+                    <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$654</b></Text>
+                    <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
+                  </Block>
+                </Block>
+              </Block>
+
+              <Block>
+                <Block classes={'e-background-blue-grey-900 flex start'}>
+                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close'} />
+                  <Block classes={'flex'}>
+                    <Image src={'assets/img/call.png'} className={'logo-img padding-col'}/>
+                    <Block>
+                      <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-100'}><b>Barcelona</b></Text>
+                      <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-100 margin-t-para'}>15-17 may 2016 &#149; 1 Room</Text>
+                    </Block>
+                  </Block>
+                </Block>
+
+                <Block classes={'flex'}>
+                  <Block classes={'brick-25 margin-15'}>
+                    <Image src={'assets/img/hotel1.jpg'} width={'90px'} height={'100px'} />
+                  </Block>
+                  <Block classes={'brick-75 flex wrap start'}>
+                    <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-900 full-w margin-t-para margin-b-para'}><b>Pear Tree Hotel</b></Text>
+                    <Block>
+                      <Icon name={"communication-location-on"} className={"e-text-light-green-500"} />
+                      <Text type={'span'} classes={'e-text-left e-body1'}>Barcelona</Text>
+                    </Block>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                        <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
+                      </Text>
+                    </Block>
+                    <Block>
+                      <Block className={'align-row'}>
+                        <Block classes={'half-w'}>
+                          <Text type={'span'} classes={'e-text-left e-text-grey-500 e-caption inline discount'}>$678 </Text>
+                          <Text type={'p'} classes={'e-text-left e-text-light-blue-500 e-title inline'}> $495</Text>
+                          <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
+                        </Block>
+                        <Block classes={'half-w'}>
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding e-right'} />
+                        </Block>
+                      </Block>
+                    </Block>
+                  </Block>
+                </Block>
+
+                <Block classes={'flex'}>
+                  <Block classes={'brick-25 margin-15'}>
+                    <Image src={'assets/img/hotel2.jpg'} width={'90px'} height={'100px'} />
+                  </Block>
+                  <Block classes={'brick-75 flex wrap start'}>
+                    <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-900 full-w margin-t-para margin-b-para'}><b>Apricot Tree Hotel</b></Text>
+                    <Block>
+                      <Icon name={"communication-location-on"} className={"e-text-light-green-500"} />
+                      <Text type={'span'} classes={'e-text-left e-body1'}>Barcelona</Text>
+                    </Block>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                        <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
+                      </Text>
+                    </Block>
+                    <Block>
+                      <Block className={'align-row'}>
+                        <Block classes={'half-w'}>
+                          <Text type={'span'} classes={'e-text-left e-text-grey-500 e-caption inline discount'}>$1000 </Text>
+                          <Text type={'p'} classes={'e-text-left e-text-light-blue-500 e-title inline'}> $500</Text>
+                          <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
+                        </Block>
+                        <Block classes={'half-w'}>
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding e-right'} />
+                        </Block>
+                      </Block>
+                    </Block>
+                  </Block>
+                </Block>
+
+                <Block classes={'flex'}>
+                  <Block classes={'brick-25 margin-15'}>
+                    <Image src={'assets/img/hotel3.jpg'} width={'90px'} height={'100px'} />
+                  </Block>
+                  <Block classes={'brick-75 flex wrap start'}>
+                    <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-900 full-w margin-t-para margin-b-para'}><b>Peach Tree Hotel</b></Text>
+                    <Block>
+                      <Icon name={"communication-location-on"} className={"e-text-light-green-500"} />
+                      <Text type={'span'} classes={'e-text-left e-body1'}>Barcelona</Text>
+                    </Block>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                        <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
+                      </Text>
+                    </Block>
+                    <Block>
+                      <Block className={'align-row'}>
+                        <Block classes={'half-w'}>
+                          <Text type={'p'} classes={'e-text-left e-text-light-blue-500 e-title inline'}> $889</Text>
+                          <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
+                        </Block>
+                        <Block classes={'half-w'}>
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding e-right'} />
+                        </Block>
+                      </Block>
+                    </Block>
+                  </Block>
+                </Block>
+
+                <Block classes={'flex'}>
+                  <Block classes={'brick-25 margin-15'}>
+                    <Image src={'assets/img/hotel4.jpg'} width={'90px'} height={'100px'} />
+                  </Block>
+                  <Block classes={'brick-75 flex wrap start'}>
+                    <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-900 full-w margin-t-para margin-b-para'}><b>Plum Tree Hotel</b></Text>
+                    <Block>
+                      <Icon name={"communication-location-on"} className={"e-text-light-green-500"} />
+                      <Text type={'span'} classes={'e-text-left e-body1'}>Barcelona</Text>
+                    </Block>
+                    <Block className={'e-text-left'}>
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                        <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
+                      </Text>
+                    </Block>
+                    <Block>
+                      <Block className={'align-row'}>
+                        <Block classes={'half-w'}>
+                          <Text type={'p'} classes={'e-text-left e-text-light-blue-500 e-title inline'}> $654</Text>
+                          <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
+                        </Block>
+                        <Block classes={'half-w'}>
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding e-right'} />
+                        </Block>
+                      </Block>
+                    </Block>
+                  </Block>
+                </Block>
+
+                <Block className={'e-background-blue-grey-100 e-text-center align-row padding-row'}>
+                  <Text type={'a'} classes={'e-text-center e-body1 icon-look '}>
+                    <Icon name={"action-visibility"} className={"e-text-blue-grey-800 e-title"} />
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center e-body1 icon-look e-background-light-green-500'}>
+                    <Icon name={"action-search"} className={"e-text-grey-100 e-title"} />
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center e-body1 icon-look'}>
+                    <Icon name={"maps-local-offer"} className={"e-text-blue-grey-800 e-title"} />
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center e-body1 icon-look'}>
+                    <Icon name={"action-account-circle"} className={"e-text-blue-grey-800 e-title"} />
+                  </Text>
+                </Block>
               </Block>
             </Block>
           </Block>
