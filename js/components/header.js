@@ -20,7 +20,7 @@ class HotelloNavigation extends React.Component {
 
   render() {
     return (
-      <Navigation className={'e-background-teal-A700'}visible={this.state.open}>
+      <Navigation className={'e-background-teal-A700'} visible={this.state.open}>
         <Block className={'padding-left-20 e-margin-top-25 e-margin-bottom-25'}>
           <Text className={'e-text-white e-title'}>
             Caterit

@@ -13,6 +13,7 @@ import HotelloBrowser from './components/browser';
 import HotelloLogin from './components/login';
 import HotelloRegister from './components/register';
 import HotelloReservation from './components/reservation';
+import HotelloPayment from './components/payment';
 
 
 class Hotello extends React.Component {
@@ -22,6 +23,8 @@ class Hotello extends React.Component {
         		<HotelloHeader />
         		<HotelloLogin />
         		<HotelloRegister />
+						<HotelloReservation />
+						<HotelloPayment />
         	</Block>
         );
     }

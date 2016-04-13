@@ -8,7 +8,7 @@ class HotelloLogin extends React.Component {
     render() {
         return (
           <Block classes={'hotello-login e-background-white'}>
-            <Block>
+            <Block classes={'e-text-center'}>
               <Btn icon={'navigation-close'} ripple={true} className={'e-left e-text-black e-background-white close-btn'} />
               <Text className={'e-text-center e-text-black e-title e-text-uppercase'}>login</Text>
             </Block>
