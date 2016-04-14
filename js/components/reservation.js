@@ -18,7 +18,7 @@ class HotelloReservation extends React.Component {
                 </Text>
               </Block>
               <Block classes={'e-align-column e-space-between e-nowrap e-stretch'}>
-                <Text type={'h2'} classes={'e-text-black e-headline'}>
+                <Text type={'h2'} classes={'e-text-black e-title'}>
                   Pear Tree Hotel
                 </Text>
                 <Text>
@@ -47,7 +47,7 @@ class HotelloReservation extends React.Component {
                 </Text>
               </Block>
               <Block classes={'e-align-column e-space-between e-nowrap e-stretch'}>
-                <Text type={'h2'} classes={'e-text-black e-headline'}>
+                <Text type={'h2'} classes={'e-text-black e-title'}>
                   Hilton Hotel & Resort
                 </Text>
                 <Text>
@@ -68,7 +68,7 @@ class HotelloReservation extends React.Component {
             </Block>
             <Block classes={'reservation-item e-align-row e-space-between e-border-bottom'}>
               <Block classes={'e-align-column e-space-between e-nowrap e-stretch'}>
-                <Text type={'h2'} classes={'e-text-black e-headline'}>
+                <Text type={'h2'} classes={'e-text-black e-title'}>
                   Aston San Francisco
                 </Text>
                 <Text>

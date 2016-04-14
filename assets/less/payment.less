@@ -1,4 +1,19 @@
 .hotello-payment {
+  .e-flex-container {
+    display: flex;
+    &.e-align-column {
+      flex-direction: column;
+    }
+    &.e-align-row {
+      flex-direction: row;
+    }
+    &.e-space-between {
+      justify-content: space-between;
+    }
+  }
+  .e-padding-10 {
+    padding: 10px;
+  }
   .e-tabs {
     width: 100%;
     height: 50px!important;
@@ -36,6 +51,41 @@
     .e-card {
       img {
         max-width: 50px;
+      }
+      .credit-card {
+        margin: 10px;
+        button {
+          margin: 15px 0;
+        }
+        input {
+          min-width: 50px;
+          max-width: 100%;
+          border: 0;
+          &::-webkit-input-placeholder {
+             color: #000;
+             text-align: right;
+          }
+        }
+        .input-adjust {
+          width: 50px!important;
+        }
+        .bd-bottom {
+          border-bottom: 1px solid lightgrey;
+        }
+      }
+      .wallet {
+        input {
+          border-bottom: 1px solid lightgrey;
+          text-align: center;
+        }
+      }
+      .paypal {
+        img {
+          max-width: 100%;
+        }
+        a {
+          cursor: pointer;
+        }
       }
     }
   }

@@ -8,7 +8,7 @@ class HotelloRegister extends React.Component {
     render() {
         return (
           <Block classes={'hotello-login e-background-white'}>
-            <Block classes={'e-text-center'}>
+            <Block classes={'e-text-center title'}>
               <Btn icon={'navigation-close'} ripple={true} className={'e-left e-text-black e-background-white close-btn'} />
               <Text type={'span'} className={'e-text-center e-text-black e-title e-text-uppercase'}>register</Text>
             </Block>
