@@ -52,6 +52,9 @@ body {
     &.stretched {
       align-items: stretch;
     }
+    &.around {
+      justify-content: space-around;
+    }
   }
   .padding-row {
     padding: 5px 15px;
@@ -132,14 +135,8 @@ body {
     width: 28px;
     padding-top: 2px;
     border-radius: 50%;
-    &:focus {
-      background-color: #8bc34a;
-      outline: none;
-      text-decoration: underline;
-    }
   }
   .border-input-icon {
-    width: 80%;
     border-bottom: 2px solid #eee;
     display: flex;
     height: 40px;
@@ -161,12 +158,6 @@ body {
       border-bottom: 0;
       margin-top: -4px;
     }
-    &.e-input-group .e-input-efects:before {
-      display: none;
-    }
-    .e-input:focus ~ .e-input-efects:after, .e-input.focus ~ .e-input-efects:after {
-      display: none;
-    }
     &.date-picker {
       width: 35%;
     }
@@ -177,13 +168,6 @@ body {
     text-align: left;
     padding-top: 8px;
     font-size: 18px;
-  }
-  .search-btn {
-    width: 80%;
-    height: 40px;
-  }
-  .padding-form {
-    padding: 5px 0;
   }
   .padding-15 {
     padding: 15px;
@@ -227,4 +211,35 @@ body {
   .no-padding {
     padding: 0;
   }
+  .margin-r-15 {
+    margin-right: 15px;
+  }
+  .badge-sell {
+    position: absolute;
+    margin-left: -11px;
+    margin-top: -11px;
+    border-radius: 50%;
+    padding: 7px 4px;
+    font-size: 10px;
+  }
+  .list-icon {
+    font-size: 24px;
+    margin: 5px;
+  }
+  .display-in-b {
+    display: inline-block;
+  }
+  .padding-list {
+    padding: 5px 5px 5px 0;
+  }
+  .align-list {
+    line-height: 14px;
+  }
+  .border-r {
+    border-right: 1px solid #cfd8dc;
+  }
+  .border-b {
+    border-bottom: 1px solid #cfd8dc;
+  }
+  
 }
