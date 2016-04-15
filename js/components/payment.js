@@ -37,7 +37,7 @@ var tabs = {
           <Text type={'span'} classes={'e-text-grey-500 e-body1'}>CVV</Text>
           <Input classes={'has-success input-adjust'} type={'text'} name={'label'} placeholder={'321'}/>
         </Block>
-        <Btn label={'Finish Order'} ripple={true} type={'succes'} className={'flat'} />
+        <Btn label={'Finish Order'} ripple={true} type={'succes'} className={'flat e-background-light-green-500'} />
       </Block>
    </Block>
    ),
