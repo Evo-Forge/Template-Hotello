@@ -20,7 +20,7 @@ import {Block,
         'rows': [
           (<Block>
             <Block classes={'bg-pear align-row padding-row'}>
-              <Block classes={'brick-75'}>
+              <Block classes={''}>
                 <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title '}>Pear Tree Hotel</Text>
                 <Block className={'e-text-left'}>
                   <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
@@ -31,7 +31,7 @@ import {Block,
                 </Block>
                 <Text type={'p'} classes={'e-text-left e-text-grey-200 e-caption'}>RATING: 85 din 100</Text>
               </Block>
-              <Block classes={'brick-25'}>
+              <Block classes={''}>
                 <Text type={'p'} classes={'e-text-right e-text-grey-100 e-title'}><b>$679</b></Text>
                 <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
               </Block>
@@ -107,6 +107,7 @@ import {Block,
               </Block>
             </Block>
           </Block>),
+
           (<Block>
             <Block className={'flex wrap'}>
               <Block classes={'half-w bg-apple'}>
@@ -123,12 +124,12 @@ import {Block,
                   <Icon name={"action-star-rate"} className={"e-text-yellow-100 inline"} />
                 </Block>
                 <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title margin-top-15'}>Apple Tree Hotel</Text>
-                <Block className={'align-row stretched'}>
-                  <Block classes={'brick-25 e-background-yellow-700 padding-col'}>
+                <Block className={'align-row stretched e-background-light-green-500'}>
+                  <Block classes={'e-background-yellow-700 padding-col padding-top-5'}>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-body1'}><b>30%</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>OFF  </Text>
                   </Block>
-                  <Block classes={'brick-75 e-background-light-green-500 e-text-right padding-col'}>
+                  <Block classes={'e-text-right padding-col'}>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption inline discount'}>$1289 </Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-title inline'}> $654</Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
@@ -150,12 +151,12 @@ import {Block,
                   <Icon name={"action-star-rate"} className={"e-text-yellow-100 inline"} />
                 </Block>
                 <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title margin-top-15'}>Pear Tree Hotel</Text>
-                <Block className={'align-row stretched'}>
-                  <Block classes={'brick-25 e-background-yellow-700 padding-col'}>
+                <Block className={'align-row stretched e-background-light-green-500'}>
+                  <Block classes={'e-background-yellow-700 padding-col padding-top-5'}>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-body1'}><b>40%</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>OFF  </Text>
                   </Block>
-                  <Block classes={'brick-75 e-background-light-green-500 e-text-right padding-col'}>
+                  <Block classes={'e-text-right padding-col'}>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption inline discount'}>$678 </Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-title inline'}> $495</Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
@@ -177,12 +178,12 @@ import {Block,
                   <Icon name={"action-star-rate"} className={"e-text-yellow-100 inline"} />
                 </Block>
                 <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title margin-top-15'}>Plum Tree Hotel</Text>
-                <Block className={'align-row stretched'}>
-                  <Block classes={'brick-25 e-background-yellow-700 padding-col'}>
+                <Block className={'align-row stretched e-background-light-green-500'}>
+                  <Block classes={'e-background-yellow-700 padding-col padding-top-5'}>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-body1'}><b>40%</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>OFF  </Text>
                   </Block>
-                  <Block classes={'brick-75 e-background-light-green-500 e-text-right padding-col'}>
+                  <Block classes={'e-text-right padding-col'}>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption inline discount'}>$1000 </Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-title inline'}> $600</Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
@@ -204,12 +205,12 @@ import {Block,
                   <Icon name={"action-star-rate"} className={"e-text-yellow-100 inline"} />
                 </Block>
                 <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title margin-top-15'}>Peach Tree Hotel</Text>
-                <Block className={'align-row stretched'}>
-                  <Block classes={'brick-25 e-background-yellow-700 padding-col'}>
+                <Block className={'align-row stretched e-background-light-green-500'}>
+                  <Block classes={'e-background-yellow-700 padding-col padding-top-5'}>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-body1'}><b>40%</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>OFF  </Text>
                   </Block>
-                  <Block classes={'brick-75 e-background-light-green-500 e-text-right padding-col'}>
+                  <Block classes={'e-text-right padding-col'}>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption inline discount'}>$899 </Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-title inline'}> $587</Text>
                     <Text type={'p'} classes={'e-text-right e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
@@ -241,7 +242,7 @@ class HotelloBrowser extends React.Component {
         return (
           <Block>
             <Block classes={'HotelloBrowser'}>
-              <Block classes={'e-background-light-green-500 logo flex'} >
+              <Block classes={'e-background-light-green-500 full-h flex'} >
                 <Block className={'e-text-center'}>
                   <Image src={'assets/img/call.png'} alt="ringing bell"/>
                   <Text type={'h1'} className={'e-display-2 e-text-grey-100 e-text-uppercase'}>Hotello</Text>
@@ -257,13 +258,13 @@ class HotelloBrowser extends React.Component {
               </Block>
 
               <Block>
-                <Block classes={'e-background-blue-grey-900 flex'}>
+                <Block classes={'e-background-blue-grey-900 flex header-h'}>
                   <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100'}>Search Result:
                     <Text type={'span'} classes={'e-text-center e-subhead e-text-light-green-500'}> 35 Hotels</Text>
                   </Text>
                 </Block>
                 <Block className={'padding-15'}>
-                  <Block classes={'flex wrap padding-row'}>
+                  <Block classes={'padding-row'}>
                     <Block classes={'border-input-icon full-w'}>
                       <Icon name={"communication-location-on"} className={"e-text-light-green-500 e-right icon-in-input"} />
                       <Input type={'text'} name={'label'} placeholder={'Cluj-Napoca, RO'} classes={'with-icon e-text-blue-grey-900'}/>
@@ -282,8 +283,8 @@ class HotelloBrowser extends React.Component {
                   </Block>
                 </Block>
 
-                <Block classes={'bg-pear flex padding-15'}>
-                  <Block classes={'brick-75'}>
+                <Block classes={'bg-pear align-row padding-15'}>
+                  <Block classes={''}>
                     <Block className={'e-text-left'}>
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
@@ -294,14 +295,14 @@ class HotelloBrowser extends React.Component {
                     </Block>
                     <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Pear Tree Hotel</Text>
                   </Block>
-                  <Block classes={'brick-25'}>
+                  <Block classes={''}>
                     <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$679</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
                   </Block>
                 </Block>
 
-                <Block classes={'bg-apricot flex padding-15'}>
-                  <Block classes={'brick-75'}>
+                <Block classes={'bg-apricot align-row padding-15'}>
+                  <Block classes={''}>
                     <Block className={'e-text-left'}>
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
@@ -312,14 +313,14 @@ class HotelloBrowser extends React.Component {
                     </Block>
                     <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Apricot Tree Hotel</Text>
                   </Block>
-                  <Block classes={'brick-25'}>
+                  <Block classes={''}>
                     <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$1000</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
                   </Block>
                 </Block>
 
-                <Block classes={'bg-peach flex padding-15'}>
-                  <Block classes={'brick-75'}>
+                <Block classes={'bg-peach align-row padding-15'}>
+                  <Block classes={''}>
                     <Block className={'e-text-left'}>
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
@@ -330,14 +331,14 @@ class HotelloBrowser extends React.Component {
                     </Block>
                     <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Peach Tree Hotel</Text>
                   </Block>
-                  <Block classes={'brick-25'}>
+                  <Block classes={''}>
                     <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$889</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
                   </Block>
                 </Block>
 
-                <Block classes={'bg-plum flex padding-15'}>
-                  <Block classes={'brick-75'}>
+                <Block classes={'bg-plum align-row padding-15'}>
+                  <Block classes={''}>
                     <Block className={'e-text-left'}>
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
@@ -348,7 +349,7 @@ class HotelloBrowser extends React.Component {
                     </Block>
                     <Text type={'h2'} classes={'e-text-left e-text-grey-100 e-title'}>Plum Tree Hotel</Text>
                   </Block>
-                  <Block classes={'brick-25'}>
+                  <Block classes={''}>
                     <Text type={'p'} classes={'e-text-right e-text-light-blue-500 e-title'}><b>$654</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-grey-100 e-caption'}>AVG/NIGHT</Text>
                   </Block>
@@ -356,9 +357,9 @@ class HotelloBrowser extends React.Component {
               </Block>
 
               <Block>
-                <Block classes={'e-background-blue-grey-900 flex start'}>
-                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close'} />
-                  <Block classes={'flex'}>
+                <Block classes={'e-background-blue-grey-900 flex start header-h'}>
+                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
+                  <Block classes={'flex center-header'}>
                     <Image src={'assets/img/call.png'} className={'logo-img padding-col'}/>
                     <Block>
                       <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-100'}><b>Barcelona</b></Text>
@@ -528,10 +529,12 @@ class HotelloBrowser extends React.Component {
               </Block>
 
               <Block>
-                <Block classes={'e-background-blue-grey-900 flex start'}>
-                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close'} />
-                  <Image src={'assets/img/call.png'} className={'logo-img padding-col margin-r-15'}/>
-                  <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-100 inline'}><b>Book this Hotel</b></Text>
+                <Block classes={'e-background-blue-grey-900 flex start header-h'}>
+                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
+                  <Block classes={'center-header flex '}>
+                    <Image src={'assets/img/call.png'} className={'logo-img padding-col'}/>
+                    <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-100 inline'}><b>Book this Hotel</b></Text>
+                  </Block>
                 </Block>
 
                 <Block classes={'bg-apple flex padding-15'}>
@@ -608,12 +611,62 @@ class HotelloBrowser extends React.Component {
                     <Input type={'text'} name={'label'} placeholder={'+44 125 2541 25'} className={'full-w'}/>
                     <Input type={'email'} name={'label'} placeholder={'jsmith@email.ue'} className={'full-w'}/>
                     <Input type={'text'} name={'label'} placeholder={'Voucher Code'} className={'full-w'}/>
+                    <Btn label={'Continue order'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin margin-b-15'} />
+                  </Block>
+                </Block>
+              </Block>
+
+              <Block classes={'bg-airport full-h'}>
+                <Block classes={'header-h flex start'}>
+                  <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                  <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100 center-header'}> Search Hotels </Text>
+                </Block>
+                <Block className={'block-h flex'}>
+                  <Block classes={'padding-row'}>
+                    <Block classes={'border-input-icon full-w'}>
+                      <Icon name={"communication-location-on"} className={"e-text-light-green-500 e-right icon-in-input"} />
+                      <Input type={'text'} name={'label'} placeholder={'Cluj-Napoca, RO'} classes={'with-icon e-text-blue-grey-900 white'}/>
+                    </Block>
+                    <Block classes={'border-input-icon'}>
+                      <Icon name={"action-event"} className={"e-text-light-green-500 e-right icon-in-input"} />
+                      <Input type={'text'} name={'label'} placeholder={'15 MAY 2016'} classes={'with-icon e-text-blue-grey-900 date-picker white'}/>
+                      <Text type={'span'} classes={'e-text-center e-body1 e-text-light-green-500 align-to'}>TO</Text>
+                      <Input type={'text'} name={'label'} placeholder={'17 MAY 2016'} classes={'with-icon e-text-blue-grey-900 date-picker white'}/>
+                    </Block>
+                    <Block classes={'border-input-icon full-w'}>
+                      <Icon name={"maps-hotel"} className={"e-text-light-green-500 e-right icon-in-input"} />
+                      <Input type={'text'} name={'label'} placeholder={'1 ROOM'} classes={'with-icon e-text-blue-grey-900 white'}/>
+                    </Block>
+                    <Btn label={'Search Hotel'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin margin-top-15'} />
+                  </Block>
+                </Block>
+              </Block>
+
+              <Block classes={'full-h bg-voucher'}>
+                <Block classes={'header-h flex start'}>
+                  <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                  <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100 center-header'}> Redeem Voucher </Text>
+                </Block>
+                <Block classes={'block-h flex'}>
+                  <Block classes={'padding-row'}>
+                    <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-100'}>If you have a Voucher, please enter the code here:</Text>
+                    <Input type={'text'} name={'label'} placeholder={'1254-MNYII-89753'} className={'full-w white center-palceholder'}/>
                     <Btn label={'Continue order'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin'} />
                   </Block>
                 </Block>
-
               </Block>
 
+              <Block classes={'full-h bg-end'}>
+                <Block classes={'header-h flex start'}>
+                  <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-blue-grey-900 no-margin'} />
+                </Block>
+                <Block classes={'e-text-center margin-b-15 padding-15'}>
+                  <Image src={'assets/img/call-end.png'} alt="ringing bell" classes={'logo-end'}/>
+                  <Text type={'h2'} className={'e-subhead e-text-light-green-500 e-text-uppercase margin-t-para'}>Hotello</Text>
+                </Block>
+                <Text type={'h2'} className={'e-title e-text-blue-grey-900 e-text-uppercase e-text-center'}>Thank You!</Text>
+                <Text type={'h2'} className={'e-title e-text-blue-grey-900 e-text-uppercase e-text-center'}>Your Order is successfull</Text>
+              </Block>
 
             </Block>
           </Block>

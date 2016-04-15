@@ -7,9 +7,8 @@ body {
     outline: none;
   }
   font-size: 14px;
-  .logo {
-    width: 100%;
-    height: 520px;
+  .full-h {
+    height: 100vh;
     img {
       width: 100px;
     }
@@ -39,7 +38,7 @@ body {
     display: inline;
   }
   .bg-pear {
-    background: linear-gradient( rgba(0, 4, 0, 0.5), rgba(0, 4, 0, 0.5) ), url('../img/Pear.jpg') no-repeat;
+    background: linear-gradient( rgba(0, 4, 0, 0.5), rgba(0, 4, 0, 0.5) ), url('../img/Pear.jpg')  center center no-repeat;
     background-size: cover;
   }
   .e-tabs-container .e-tab-content.active {
@@ -59,12 +58,6 @@ body {
   .padding-row {
     padding: 5px 15px;
   }
-  .brick-75 {
-    width: 75%;
-  }
-  .brick-25 {
-    width: 25%;
-  }
   h2 {
     margin-bottom: 10px;
   }
@@ -72,22 +65,22 @@ body {
     margin-bottom: 0;
   }
   .bg-apple {
-    background: url('../img/rsz_apple.png') no-repeat;
+    background: url('../img/rsz_apple.png') center center no-repeat;
     background-size: cover;
   }
   .margin-top-15 {
     margin-top: 15px;
   }
   .bg-apricot {
-    background: linear-gradient( rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6) ), url('../img/apricot.jpg') no-repeat;
+    background: linear-gradient( rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6) ), url('../img/apricot.jpg') center center no-repeat;
     background-size: cover;
   }
   .bg-peach {
-    background: linear-gradient( rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6) ), url('../img/peach.jpg') no-repeat;
+    background: linear-gradient( rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6) ), url('../img/peach.jpg') center center no-repeat;
     background-size: cover;
   }
   .bg-plum {
-    background: linear-gradient( rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6) ), url('../img/plum.jpg') no-repeat;
+    background: linear-gradient( rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6) ), url('../img/plum.jpg') no-repeat center center;
     background-size: cover;
   }
   .half-w {
@@ -121,10 +114,10 @@ body {
   }
   .padding-col {
     padding: 0 5px;
-    &.brick-25 {
-      padding-top: 5px;
-    }
   }
+  .padding-top-5 {
+    padding-top: 5px;
+    }
   .discount {
     text-decoration: line-through;
   }
@@ -182,20 +175,10 @@ body {
     margin-top: -7px;
   }
   .icon-close {
-    border-radius: 50%;
     &.fab-mini {
       box-shadow: none;
       &:hover:not(.flat) {
         box-shadow: none;
-      }
-      i {
-        font-size: 24px;
-      }
-    }
-    &.e-btn-fab-mini {
-      margin: 0;
-      &.close-btn-align {
-        margin-top: 20px;
       }
     }
     &:focus {
@@ -241,5 +224,63 @@ body {
   .border-b {
     border-bottom: 1px solid #cfd8dc;
   }
-  
+  .bg-airport {
+    background: linear-gradient( rgba(0, 4, 0, 0.2), rgba(0, 4, 0, 0.2) ), url('../img/airport.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .header-h {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+  }
+  .close-bg {
+    background: inherit;
+    &.fab-mini {
+      box-shadow: none;
+      &:hover:not(.flat) {
+        box-shadow: none;
+      }
+    }
+  }
+  .center-header {
+    margin: 0 auto;
+    padding-right: 35px;
+  }
+  .block-h {
+    height: calc(100vh-7.042253);
+    padding: 0 15px;
+  }
+  .bg-voucher {
+    background: linear-gradient( rgba(0, 4, 0, 0.2), rgba(0, 4, 0, 0.2) ), url('../img/voucher.jpg') no-repeat;
+    background-size: cover;
+  }
+  .margin-b-15 {
+    margin-bottom: 15px;
+  }
+  .bg-end {
+    background: url('../img/final.jpg') center center no-repeat;
+    background-size: cover;
+    img {
+      width: 60px;
+    }
+  }
+  .white {
+    .e-input-group .e-input:not(textarea):not(select),
+    .e-input:not(textarea):not(select) {
+      color: #eee;
+    }
+    input {
+      &::-webkit-input-placeholder {
+      color: #eee;
+      }
+    }
+  }
+  .center-palceholder {
+    input {
+      &::-webkit-input-placeholder {
+        text-align: center;
+      }
+    }
+  }
+
 }

@@ -34,11 +34,10 @@ body {
 .HotelloBrowser a:focus {
   outline: none;
 }
-.HotelloBrowser .logo {
-  width: 100%;
-  height: 520px;
+.HotelloBrowser .full-h {
+  height: 100vh;
 }
-.HotelloBrowser .logo img {
+.HotelloBrowser .full-h img {
   width: 100px;
 }
 .HotelloBrowser .flex {
@@ -62,7 +61,7 @@ body {
   display: inline;
 }
 .HotelloBrowser .bg-pear {
-  background: linear-gradient(rgba(0, 4, 0, 0.5), rgba(0, 4, 0, 0.5)), url('../img/Pear.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 4, 0, 0.5), rgba(0, 4, 0, 0.5)), url('../img/Pear.jpg') center center no-repeat;
   background-size: cover;
 }
 .HotelloBrowser .e-tabs-container .e-tab-content.active {
@@ -82,12 +81,6 @@ body {
 .HotelloBrowser .padding-row {
   padding: 5px 15px;
 }
-.HotelloBrowser .brick-75 {
-  width: 75%;
-}
-.HotelloBrowser .brick-25 {
-  width: 25%;
-}
 .HotelloBrowser h2 {
   margin-bottom: 10px;
 }
@@ -96,22 +89,22 @@ body {
   margin-bottom: 0;
 }
 .HotelloBrowser .bg-apple {
-  background: url('../img/rsz_apple.png') no-repeat;
+  background: url('../img/rsz_apple.png') center center no-repeat;
   background-size: cover;
 }
 .HotelloBrowser .margin-top-15 {
   margin-top: 15px;
 }
 .HotelloBrowser .bg-apricot {
-  background: linear-gradient(rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6)), url('../img/apricot.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6)), url('../img/apricot.jpg') center center no-repeat;
   background-size: cover;
 }
 .HotelloBrowser .bg-peach {
-  background: linear-gradient(rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6)), url('../img/peach.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6)), url('../img/peach.jpg') center center no-repeat;
   background-size: cover;
 }
 .HotelloBrowser .bg-plum {
-  background: linear-gradient(rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6)), url('../img/plum.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 4, 0, 0.6), rgba(0, 4, 0, 0.6)), url('../img/plum.jpg') no-repeat center center;
   background-size: cover;
 }
 .HotelloBrowser .half-w {
@@ -146,7 +139,7 @@ body {
 .HotelloBrowser .padding-col {
   padding: 0 5px;
 }
-.HotelloBrowser .padding-col.brick-25 {
+.HotelloBrowser .padding-top-5 {
   padding-top: 5px;
 }
 .HotelloBrowser .discount {
@@ -205,23 +198,11 @@ body {
 .HotelloBrowser .margin-t-para {
   margin-top: -7px;
 }
-.HotelloBrowser .icon-close {
-  border-radius: 50%;
-}
 .HotelloBrowser .icon-close.fab-mini {
   box-shadow: none;
 }
 .HotelloBrowser .icon-close.fab-mini:hover:not(.flat) {
   box-shadow: none;
-}
-.HotelloBrowser .icon-close.fab-mini i {
-  font-size: 24px;
-}
-.HotelloBrowser .icon-close.e-btn-fab-mini {
-  margin: 0;
-}
-.HotelloBrowser .icon-close.e-btn-fab-mini.close-btn-align {
-  margin-top: 20px;
 }
 .HotelloBrowser .icon-close:focus {
   outline: none;
@@ -265,8 +246,55 @@ body {
 .HotelloBrowser .border-b {
   border-bottom: 1px solid #cfd8dc;
 }
+.HotelloBrowser .bg-airport {
+  background: linear-gradient(rgba(0, 4, 0, 0.2), rgba(0, 4, 0, 0.2)), url('../img/airport.jpg') center center no-repeat;
+  background-size: cover;
+}
+.HotelloBrowser .header-h {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+}
+.HotelloBrowser .close-bg {
+  background: inherit;
+}
+.HotelloBrowser .close-bg.fab-mini {
+  box-shadow: none;
+}
+.HotelloBrowser .close-bg.fab-mini:hover:not(.flat) {
+  box-shadow: none;
+}
+.HotelloBrowser .center-header {
+  margin: 0 auto;
+  padding-right: 35px;
+}
+.HotelloBrowser .block-h {
+  height: calc(92.957747vh);
+  padding: 0 15px;
+}
+.HotelloBrowser .bg-voucher {
+  background: linear-gradient(rgba(0, 4, 0, 0.2), rgba(0, 4, 0, 0.2)), url('../img/voucher.jpg') no-repeat;
+  background-size: cover;
+}
 .HotelloBrowser .margin-b-15 {
   margin-bottom: 15px;
+}
+.HotelloBrowser .bg-end {
+  background: url('../img/final.jpg') center center no-repeat;
+  background-size: cover;
+}
+.HotelloBrowser .bg-end img {
+  width: 60px;
+}
+.HotelloBrowser .white .e-input-group .e-input:not(textarea):not(select),
+.HotelloBrowser .white .e-input:not(textarea):not(select) {
+  color: #eee;
+}
+.HotelloBrowser .white input::-webkit-input-placeholder {
+  color: #eee;
+}
+.HotelloBrowser .center-palceholder input::-webkit-input-placeholder {
+  text-align: center;
 }
 footer {
   width: 100%;
