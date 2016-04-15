@@ -20,46 +20,60 @@ class HotelloNavigation extends React.Component {
 
   render() {
     return (
-      <Navigation className={'e-background-teal-A700'} visible={this.state.open}>
-        <Block className={'padding-left-20 e-margin-top-25 e-margin-bottom-25'}>
-          <Text className={'e-text-white e-title'}>
-            Caterit
-          </Text>
+      <Navigation className={'e-background-grey-100'} visible={this.state.open}>
+        <Block className={'e-padding-10 e-margin-top-25 e-margin-bottom-25 nav-bg e-align-row'}>
+          <Block>
+            <Icon name={"image-brightness-1"} className={"e-text-grey-900 e-background-grey-900"} />
+          </Block>
+          <Block>
+            <Text type={'h3'} className={'e-text-grey-100 e-title'}>
+              Hello, There!
+            </Text>
+            <Text type={'p'} className={'e-text-grey-100 e-caption'}>
+              You might wanna login first
+            </Text>
+          </Block>
         </Block>
   			<List type={'navigation'} className={'nav-ul e-body1'}>
   				<ListItem>
   				 <Text type={'a'}>
-  					<Block classes={'content e-left e-text-white'}>MY ORDERS</Block>
+  					<Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Make A Reservation</Block>
   				 </Text>
   				</ListItem>
-  				<Divider classes={'thinnest e-background-grey-200 e-text-center'} />
+  				<Divider classes={'thinnest e-background-grey-300 e-text-center'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>ORDER HISTORY</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>My Reservations</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>PAYMENT DETAILS</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>My Subscribe</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>DELIVERY ADDRESSES</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Voucher Redeem</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>ABOUT</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Setting</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>LOG OUT</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Help Center</Block>
+  				</Text>
+  			 </ListItem>
+         <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
+  			 <ListItem>
+  				<Text type={'a'}>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>LogIn / Register</Block>
   				</Text>
   			 </ListItem>
   		 </List>

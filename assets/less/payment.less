@@ -10,6 +10,9 @@
     &.e-space-between {
       justify-content: space-between;
     }
+    &.e-space-around {
+      justify-content: space-around;
+    }
   }
   .e-padding-10 {
     padding: 10px;
@@ -30,11 +33,13 @@
         a {
           padding: 0!important;
           height: 50px;
+          background-size: cover;
           span {
             font-size: 11px;
             font-weight: 600;
           }
           img {
+            max-height: 50px;
             max-width: 100%;
           }
           p {

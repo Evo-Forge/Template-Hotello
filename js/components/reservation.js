@@ -8,7 +8,7 @@ class HotelloReservation extends React.Component {
     render() {
         return (
           <Block classes={'hotello-reservation'}>
-            <Block classes={'reservation-item e-align-row e-border-bottom'}>
+            <Block classes={'reservation-item e-align-row e-space-between e-border-bottom'}>
               <Block classes={'reservation-no e-background-grey-200'}>
                 <Text type={'p'} classes={'e-text-center e-caption e-text-amber-800 e-text-uppercase'}>
                   Order
@@ -37,7 +37,7 @@ class HotelloReservation extends React.Component {
                 <Btn icon={'hardware-keyboard-arrow-right'} ripple={true} className={'flat e-background-white'} />
               </Block>
             </Block>
-            <Block classes={'reservation-item e-align-row e-border-bottom'}>
+            <Block classes={'reservation-item e-align-row e-space-between e-border-bottom'}>
               <Block classes={'reservation-no e-background-grey-200'}>
                 <Text type={'p'} classes={'e-text-center e-caption e-text-amber-800 e-text-uppercase'}>
                   Order
