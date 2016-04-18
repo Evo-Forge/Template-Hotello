@@ -67,6 +67,10 @@ body {
 .HotelloBrowser .e-tabs-container .e-tab-content.active {
   padding: 0;
 }
+.HotelloBrowser i[name=action-star-rate] {
+  font-size: 16px;
+  font-weight: bold;
+}
 .HotelloBrowser .align-row {
   display: flex;
   justify-content: space-between;
@@ -280,7 +284,7 @@ body {
   margin-bottom: 15px;
 }
 .HotelloBrowser .bg-end {
-  background: url('../img/final.jpg') center center no-repeat;
+  background: url('../img/the-end.jpg') center center no-repeat;
   background-size: cover;
 }
 .HotelloBrowser .bg-end img {
