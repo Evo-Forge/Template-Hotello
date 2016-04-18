@@ -1,5 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
+
 
 import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem, Input} from 'react-essence';
 
@@ -16,13 +18,17 @@ class HotelloLogin extends React.Component {
               <Block classes={'e-align-column e-padding-30'}>
                 <Input type={'text'} name={'label'} label={'Email or Username'}/>
                 <Input type={'text'} name={'label'} label={'Password'}/>
-                <Btn label={'Login'} ripple={true} type={'succes'} className={'flat e-background-light-green-500'} />
+                <Link to="/content/search">
+                  <Btn label={'Login'} ripple={true} type={'succes'} className={'flat e-background-light-green-500'} />
+                </Link>
                 <Text type={'a'} classes={'e-text-center e-subhead e-padding-20'}>
                   Forgot Password?
                 </Text>
-                <Text type={'a'} classes={'e-text-center e-subhead e-padding-20'}>
-                  Register an Account
-                </Text>
+                <Link to="/content/register">
+                  <Text type={'a'} classes={'e-text-center e-subhead e-padding-20'}>
+                    Register an Account
+                  </Text>
+                </Link>
               </Block>
               <Block classes={'e-text-center'}>
                 <Text type={'span'} classes={'e-title e-text-uppercase separator'}>

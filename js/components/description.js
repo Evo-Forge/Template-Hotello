@@ -1,5 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
+
 
 import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem, Icon, Tab, Divider, Image} from 'react-essence';
 
@@ -51,22 +53,22 @@ var tabs = {
    ),
    (<Block classes={'photos'}>
       <Block classes={'thumb'}>
-        <Image src={'./assets/img/thumb1.jpg'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/thumb1.jpg'} classes={'e-img-rsp'}/>
       </Block>
       <Block classes={'thumb'}>
-        <Image src={'./assets/img/thumb2.jpg'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/thumb2.jpg'} classes={'e-img-rsp'}/>
       </Block>
       <Block classes={'thumb'}>
-        <Image src={'./assets/img/thumb3.jpg'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/thumb3.jpg'} classes={'e-img-rsp'}/>
       </Block>
       <Block classes={'thumb'}>
-        <Image src={'./assets/img/thumb4.jpg'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/thumb4.jpg'} classes={'e-img-rsp'}/>
       </Block>
       <Block classes={'thumb'}>
-        <Image src={'./assets/img/thumb5.jpg'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/thumb5.jpg'} classes={'e-img-rsp'}/>
       </Block>
       <Block classes={'thumb'}>
-        <Image src={'./assets/img/thumb6.jpg'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/thumb6.jpg'} classes={'e-img-rsp'}/>
       </Block>
    </Block>
    ),

@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
 
 import { AppBar, Block, Btn, Dialog, DialogHeader, DialogContent, DialogFooter, Divider, Icon, Image, Navigation, Text, Utils, Menu, List, ListItem,Switch } from 'react-essence';
 
@@ -21,7 +22,7 @@ class HotelloNavigation extends React.Component {
   render() {
     return (
       <Navigation className={'e-background-grey-100'} visible={this.state.open}>
-        <Block className={'e-padding-10 e-margin-top-25 e-margin-bottom-25 nav-bg e-align-row'}>
+        <Block className={'e-padding-10 nav-bg e-align-row'}>
           <Block>
             <Icon name={"image-brightness-1"} className={"e-text-grey-900 e-background-grey-900"} />
           </Block>
@@ -36,15 +37,19 @@ class HotelloNavigation extends React.Component {
         </Block>
   			<List type={'navigation'} className={'nav-ul e-body1'}>
   				<ListItem>
-  				 <Text type={'a'}>
-  					<Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Make A Reservation</Block>
-  				 </Text>
+            <Link to="/content/s-result">
+    				 <Text type={'a'}>
+    					<Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Make A Reservation</Block>
+    				 </Text>
+           </Link>
   				</ListItem>
   				<Divider classes={'thinnest e-background-grey-300 e-text-center'} />
   			 <ListItem>
+         <Link to="/content/reservation">
   				<Text type={'a'}>
   				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>My Reservations</Block>
   				</Text>
+          </Link>
   			 </ListItem>
   			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
@@ -54,9 +59,11 @@ class HotelloNavigation extends React.Component {
   			 </ListItem>
   			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
+         <Link to="/content/voucher">
   				<Text type={'a'}>
   				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Voucher Redeem</Block>
   				</Text>
+          </Link>
   			 </ListItem>
   			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
@@ -72,9 +79,11 @@ class HotelloNavigation extends React.Component {
   			 </ListItem>
          <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
+         <Link to="/content/login">
   				<Text type={'a'}>
   				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>LogIn / Register</Block>
   				</Text>
+          </Link>
   			 </ListItem>
   		 </List>
      </Navigation>

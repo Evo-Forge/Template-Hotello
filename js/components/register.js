@@ -1,5 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
+
 
 import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem, Input} from 'react-essence';
 
@@ -19,10 +21,7 @@ class HotelloRegister extends React.Component {
               <Input type={'text'} name={'label'} label={'Last Name'}/>
               <Btn label={'Register'} ripple={true} type={'succes'} className={'flat e-background-blue-400'} />
               <Text type={'a'} classes={'e-text-center e-subhead'}>
-                Forgot Password?
-              </Text>
-              <Text type={'a'} classes={'e-text-center e-subhead'}>
-                Register an Account
+                Have an account?
               </Text>
             </Block>
             <Block classes={'e-text-center'}>
