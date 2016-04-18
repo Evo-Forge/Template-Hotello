@@ -28,6 +28,8 @@ class Hotello extends React.Component {
 						<HotelloReservation />
 						<HotelloPayment />
 						<HotelloDescription />
+						<HotelloBrowser />
+						<HotelloReservation />
         	</Block>
         );
     }
