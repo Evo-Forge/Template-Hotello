@@ -17,10 +17,10 @@ class HotelloLogin extends React.Component {
                 <Input type={'text'} name={'label'} label={'Email or Username'}/>
                 <Input type={'text'} name={'label'} label={'Password'}/>
                 <Btn label={'Login'} ripple={true} type={'succes'} className={'flat e-background-light-green-500'} />
-                <Text type={'a'} classes={'e-text-center e-subhead'}>
+                <Text type={'a'} classes={'e-text-center e-subhead e-padding-20'}>
                   Forgot Password?
                 </Text>
-                <Text type={'a'} classes={'e-text-center e-subhead'}>
+                <Text type={'a'} classes={'e-text-center e-subhead e-padding-20'}>
                   Register an Account
                 </Text>
               </Block>
@@ -29,7 +29,7 @@ class HotelloLogin extends React.Component {
                   or
                 </Text>
               </Block>
-              <Block classes={'e-text-center'}>
+              <Block classes={'e-text-center e-padding-30'}>
                 <Btn label={'Facebook'} ripple={true} type={'succes'} className={'flat e-background-blue-800'} />
                 <Btn label={'Google'} ripple={true} type={'succes'} className={'flat e-background-red-400'} />
               </Block>
