@@ -22,7 +22,9 @@ class HotelloSearch extends React.Component {
             <Block classes={'hotello-search'}>
               <Block classes={'bg-airport full-h'}>
                 <Block classes={'header-h flex start'}>
-                  <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                  <Link to="/content/browser">
+                    <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                  </Link>
                   <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100 center-header'}> Search Hotels </Text>
                 </Block>
                 <Block className={'block-h flex'}>

@@ -21,7 +21,9 @@ class HotelloInfo extends React.Component {
           <Block>
             <Block classes={'hotello-info'}>
                 <Block classes={'e-background-blue-grey-900 flex start header-h'}>
-                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
+                  <Link to="/content/description">
+                    <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
+                  </Link>
                   <Block classes={'center-header flex '}>
                     <Image src={'../assets/img/call.png'} className={'logo-img padding-col'}/>
                     <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-100 inline'}><b>Book this Hotel</b></Text>

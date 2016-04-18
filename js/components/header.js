@@ -38,17 +38,13 @@ class HotelloNavigation extends React.Component {
   			<List type={'navigation'} className={'nav-ul e-body1'}>
   				<ListItem>
             <Link to="/content/s-result">
-    				 <Text type={'a'}>
     					<Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Make A Reservation</Block>
-    				 </Text>
            </Link>
   				</ListItem>
   				<Divider classes={'thinnest e-background-grey-300 e-text-center'} />
   			 <ListItem>
          <Link to="/content/reservation">
-  				<Text type={'a'}>
   				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>My Reservations</Block>
-  				</Text>
           </Link>
   			 </ListItem>
   			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
@@ -60,9 +56,7 @@ class HotelloNavigation extends React.Component {
   			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
          <Link to="/content/voucher">
-  				<Text type={'a'}>
   				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Voucher Redeem</Block>
-  				</Text>
           </Link>
   			 </ListItem>
   			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
@@ -80,9 +74,7 @@ class HotelloNavigation extends React.Component {
          <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
          <Link to="/content/login">
-  				<Text type={'a'}>
   				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>LogIn / Register</Block>
-  				</Text>
           </Link>
   			 </ListItem>
   		 </List>
@@ -112,12 +104,14 @@ class HotelloHeader extends React.Component {
   render() {
       return (
         <Block classes={'hotello-header e-text-white'}>
-          <AppBar className={'e-text-white e-align-row e-background-grey-800 e-text-center'}>
-            <Btn icon={"navigation-menu"} className={"e-left e-text-grey-100 e-background-grey-800"} onClick={this.showNavigation.bind(this)} />
+          <AppBar className={'e-text-white e-align-row e-background-blue-grey-900 e-text-center'}>
+            <Btn icon={"navigation-menu"} className={"e-left e-text-grey-100 e-background-blue-grey-900"} onClick={this.showNavigation.bind(this)} />
 
             <Text className={'e-text-center e-text-grey-100 e-headline e-text-uppercase'}>hotello</Text>
 
-            <Btn icon={"action-search"} className={"e-text-grey-100 e-right e-background-grey-800"} />
+            <Link to="/content/s-result">
+              <Btn icon={"action-search"} className={"e-text-grey-100 e-right e-background-blue-grey-900"} />
+            </Link>
           </AppBar>
           <HotelloNavigation visible={this.state.navigation} />
         </Block>

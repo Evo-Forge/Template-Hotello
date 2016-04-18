@@ -61,9 +61,9 @@ class HotelloResults extends React.Component {
                         <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
                       </Block>
                       <Block classes={''}>
-                      <Link to="/content/info">
-                        <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
-                      </Link>
+                        <Link to="/content/description">
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                        </Link>
                       </Block>
                     </Block>
                   </Block>
@@ -100,7 +100,9 @@ class HotelloResults extends React.Component {
                         <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
                       </Block>
                       <Block classes={''}>
-                        <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                        <Link to="/content/description">
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                        </Link>
                       </Block>
                       </Block>
                   </Block>
@@ -135,7 +137,9 @@ class HotelloResults extends React.Component {
                         <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
                       </Block>
                       <Block classes={''}>
-                        <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding e-right'} />
+                        <Link to="/content/description">
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                        </Link>
                       </Block>
                     </Block>
                   </Block>
@@ -170,7 +174,9 @@ class HotelloResults extends React.Component {
                         <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption margin-t-para'}>AVG/NIGHT</Text>
                       </Block>
                       <Block classes={''}>
-                        <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                        <Link to="/content/description">
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                        </Link>
                       </Block>
                     </Block>
                   </Block>

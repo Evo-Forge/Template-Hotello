@@ -22,7 +22,9 @@ class HotelloVoucher extends React.Component {
             <Block classes={'hotello-voucher'}>
               <Block classes={'full-h bg-voucher'}>
                 <Block classes={'header-h flex start'}>
-                  <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                  <Link to="/content/browser">
+                    <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                  </Link>
                   <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100 center-header'}> Redeem Voucher </Text>
                 </Block>
                 <Block classes={'block-h flex'}>

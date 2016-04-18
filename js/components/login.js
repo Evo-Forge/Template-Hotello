@@ -12,7 +12,9 @@ class HotelloLogin extends React.Component {
           <Block classes={'hotello-login e-background-white e-flex-container'}>
             <Block classes={'e-align-column e-space-between'}>
               <Block classes={'e-text-center title'}>
-                <Btn icon={'navigation-close'} ripple={true} className={'e-left e-text-black e-background-white close-btn'} />
+                <Link to="/content/browser">
+                  <Btn icon={'navigation-close'} ripple={true} className={'e-left e-text-black e-background-white close-btn'} />
+                </Link>
                 <Text className={'e-text-center e-text-black e-title e-text-uppercase'}>login</Text>
               </Block>
               <Block classes={'e-align-column e-padding-30'}>

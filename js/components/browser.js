@@ -243,7 +243,7 @@ class HotelloBrowser extends React.Component {
     render() {
         return (
           <Block>
-            <Block classes={'HotelloBrowser'}>
+            <Block classes={'hotello-browser'}>
               <Block>
                 <Tab
                   data={tabs}

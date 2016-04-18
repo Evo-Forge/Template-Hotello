@@ -3,7 +3,7 @@ import ClassNames from 'classnames';
 import { Link } from 'react-router';
 
 
-import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem, Icon, Tab, Divider, Image} from 'react-essence';
+import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem, Icon, Tab, Divider, Toast, Image} from 'react-essence';
 
 var tabs = {
  'header': [
@@ -47,7 +47,7 @@ var tabs = {
       </Block>
       <Block classes={'e-text-center padding-tb-10'}>
         <Text type={'p'} classes={'e-text-grey-900 e-title e-text-uppercase'}>Map</Text>
-        <Image src={'./assets/img/map.png'} classes={'e-img-rsp'}/>
+        <Image src={'../assets/img/map.png'} classes={'e-img-rsp'}/>
       </Block>
    </Block>
    ),
@@ -81,6 +81,43 @@ var tabs = {
 
 
 class HotelloDescription extends React.Component {
+  constructor(props) {
+        super(props);
+        this.state = {
+      delay: 2000,
+      visible: false,
+      message: 'Added to favorites!',
+            classes: ClassNames(
+                this.props.classes,
+                this.props.className
+            )
+        };
+    }
+
+    toastStarted() {
+      {/* console.log('toast started'); */}
+    }
+
+    toastPaused() {
+      {/* console.log('toast paused'); */}
+    }
+
+    toastResumed() {
+      {/* console.log('toast resumed'); */}
+    }
+
+    toastEnded() {
+      {/* console.log('toast ended'); */}
+      this.setState({
+            visible: false
+        });
+    }
+
+    showToast() {
+        this.setState({
+            visible: true
+        });
+    }
 
       render() {
         return (
@@ -88,7 +125,9 @@ class HotelloDescription extends React.Component {
             <Block classes={'bg-big e-flex-container e-align-column e-space-between'}>
               <Block classes={'e-align-row e-space-between'}>
                 <Block>
-                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
+                  <Link to="/content/browser">
+                    <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
+                  </Link>
                 </Block>
                 <Block>
                   <Text type={'h3'} classes={'e-text-grey-100 e-title'}>Hilton Hotel & Resort</Text>
@@ -101,8 +140,18 @@ class HotelloDescription extends React.Component {
                   </Block>
                 </Block>
                 <Block>
-                  <Btn icon={'action-favorite'} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
+                  <Btn icon={'action-favorite'} onClick={this.showToast.bind(this)} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
                 </Block>
+                <Toast
+                  delay={this.state.delay}
+                  classes={'e-text-white'}
+                  visible={this.state.visible}
+                  onStart={this.toastStarted.bind(this)}
+                  onPause={this.toastPaused.bind(this)}
+                  onResume={this.toastResumed.bind(this)}
+                  onEnd={this.toastEnded.bind(this)} >
+                  {this.state.message}
+                </Toast>
               </Block>
               <Block classes={'img-overlay e-background-grey-900 e-align-row e-space-around e-align-center'}>
                 <Block classes={'e-align-column'}>
@@ -121,6 +170,16 @@ class HotelloDescription extends React.Component {
                 data={tabs}
                 classes={'e-background-grey-100 e-text-grey-50'}
                 indicator={'e-background-lime-600'}/>
+            </Block>
+            <Block classes={'e-align-row e-space-around'}>
+              <Block classes={'e-align-center'}>
+                <Text type={'span'} classes={'e-text-grey-300 e-subhead e-line-through inline'}>$ 1,098</Text>
+                <Text type={'span'} classes={'e-text-blue-600 e-headline inline'}>$ 765</Text>
+                <Text type={'p'} classes={'e-text-black e-subhead e-text-uppercase'}>Avg / Night</Text>
+              </Block>
+              <Link to="/content/info">
+                <Btn label={'Booking Now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500'} />
+              </Link>
             </Block>
           </Block>
         );
