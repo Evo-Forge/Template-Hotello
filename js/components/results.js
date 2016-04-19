@@ -25,7 +25,6 @@ class HotelloResults extends React.Component {
                   <Link to="/content/search">
                     <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
                   </Link>
-                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close e-no-margin'} />
                   <Block classes={'flex center-header'}>
                     <Image src={'../assets/img/call.png'} className={'logo-img margin-r-15'}/>
                     <Block>
