@@ -23,7 +23,7 @@ class HotelloSearch extends React.Component {
               <Block classes={'bg-airport full-h'}>
                 <Block classes={'header-h flex start'}>
                   <Link to="/content/browser">
-                    <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 no-margin'} />
+                    <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-grey-100 e-no-margin'} />
                   </Link>
                   <Text type={'h2'} classes={'e-text-center e-subhead e-text-grey-100 center-header'}> Search Hotels </Text>
                 </Block>
@@ -44,7 +44,7 @@ class HotelloSearch extends React.Component {
                       <Input type={'text'} name={'label'} placeholder={'1 ROOM'} classes={'with-icon e-text-blue-grey-900 white'}/>
                     </Block>
                     <Link to="/content/results">
-                      <Btn label={'Search Hotel'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin margin-top-15'} />
+                      <Btn label={'Search Hotel'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w e-no-margin e-margin-top-15'} />
                     </Link>
                   </Block>
                 </Block>

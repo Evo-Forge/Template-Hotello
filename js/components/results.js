@@ -25,8 +25,9 @@ class HotelloResults extends React.Component {
                   <Link to="/content/search">
                     <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
                   </Link>
+                  <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close e-no-margin'} />
                   <Block classes={'flex center-header'}>
-                    <Image src={'../assets/img/call.png'} className={'logo-img padding-col'}/>
+                    <Image src={'../assets/img/call.png'} className={'logo-img margin-r-15'}/>
                     <Block>
                       <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-100'}><b>Barcelona</b></Text>
                       <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-100 margin-t-para'}>15-17 may 2016 &bull; 1 Room</Text>
@@ -37,8 +38,9 @@ class HotelloResults extends React.Component {
                 <Block classes={'flex'}>
                   <Block classes={'margin-15'}>
                     <Text type={'small'} classes={'e-text-center e-text-grey-100 e-caption e-background-orange-700 badge-sell'}> 30% </Text>
-                    <Image src={'../assets/img/hotel1.jpg'} width={'90px'} height={'100px'} />
+                    <Image src={'../assets/img/hotel1.jpg'} width={'90px'} height={'100px'}/>
                   </Block>
+
                   <Block classes={'flex wrap start'}>
                     <Text type={'p'} classes={'e-text-left e-subhead e-text-blue-grey-900 full-w margin-t-para margin-b-para'}><b>Pear Tree Hotel</b></Text>
                     <Block>
@@ -51,7 +53,7 @@ class HotelloResults extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
-                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline align-para'}>Rating:
                         <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
                       </Text>
                     </Block>
@@ -64,14 +66,14 @@ class HotelloResults extends React.Component {
                       </Block>
                       <Block classes={''}>
                         <Link to="/content/description">
-                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 e-no-margin e-no-padding'} />
                         </Link>
                       </Block>
                     </Block>
                   </Block>
                 </Block>
 
-                <Divider classes={'thin e-background-grey-100 no-margin'} />
+                <Divider classes={'thin e-background-grey-100 e-no-margin'} />
 
                 <Block classes={'flex'}>
                   <Block classes={'margin-15'}>
@@ -90,7 +92,7 @@ class HotelloResults extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
-                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline align-para'}>Rating:
                         <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
                       </Text>
                     </Block>
@@ -103,14 +105,14 @@ class HotelloResults extends React.Component {
                       </Block>
                       <Block classes={''}>
                         <Link to="/content/description">
-                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 e-no-margin e-no-padding'} />
                         </Link>
                       </Block>
                       </Block>
                   </Block>
                 </Block>
 
-                <Divider classes={'thin e-background-grey-100 no-margin'} />
+                <Divider classes={'thin e-background-grey-100 e-no-margin'} />
 
                 <Block classes={'flex'}>
                   <Block classes={'margin-15'}>
@@ -128,7 +130,7 @@ class HotelloResults extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
-                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline align-para'}>Rating:
                         <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
                       </Text>
                     </Block>
@@ -140,14 +142,14 @@ class HotelloResults extends React.Component {
                       </Block>
                       <Block classes={''}>
                         <Link to="/content/description">
-                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 e-no-margin e-no-padding'} />
                         </Link>
                       </Block>
                     </Block>
                   </Block>
                 </Block>
 
-                <Divider classes={'thin e-background-grey-100 no-margin'} />
+                <Divider classes={'thin e-background-grey-100 e-no-margin'} />
 
                 <Block classes={'flex'}>
                   <Block classes={'margin-15'}>
@@ -165,7 +167,7 @@ class HotelloResults extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
-                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline'}>Rating:
+                      <Text type={'p'} classes={'e-text-left e-text-grey-900 e-caption inline align-para'}>Rating:
                         <Text type={'span'} classes={'e-text-left e-text-light-green-500 e-caption'}> 85 din 100</Text>
                       </Text>
                     </Block>
@@ -177,14 +179,14 @@ class HotelloResults extends React.Component {
                       </Block>
                       <Block classes={''}>
                         <Link to="/content/description">
-                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 no-margin no-padding'} />
+                          <Btn label={'Book now'} ripple={true} type={'succes'} className={'flat e-background-light-green-500 e-no-margin e-no-padding'} />
                         </Link>
                       </Block>
                     </Block>
                   </Block>
                 </Block>
 
-                <Divider classes={'thin e-background-grey-100 no-margin'} />
+                <Divider classes={'thin e-background-grey-100 e-no-margin'} />
 
                 <Block className={'e-background-blue-grey-100 e-text-center align-row padding-row'}>
                   <Text type={'a'} classes={'e-text-center e-body1 icon-look '}>
