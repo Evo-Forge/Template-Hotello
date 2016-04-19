@@ -43,7 +43,7 @@ class HotelloSResult extends React.Component {
                       <Icon name={"maps-hotel"} className={"e-text-light-green-500 e-right icon-in-input"} />
                       <Input type={'text'} name={'label'} placeholder={'1 ROOM'} classes={'with-icon e-text-blue-grey-900'}/>
                     </Block>
-                    <Link to="/content/login">
+                    <Link to="/content/search">
                       <Btn label={'Search Hotel'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w e-no-margin e-margin-top-15'} />
                     </Link>
                   </Block>

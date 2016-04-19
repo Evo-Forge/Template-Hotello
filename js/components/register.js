@@ -21,7 +21,7 @@ class HotelloRegister extends React.Component {
               <Input type={'text'} name={'label'} label={'Password'}/>
               <Input type={'text'} name={'label'} label={'First Name'}/>
               <Input type={'text'} name={'label'} label={'Last Name'}/>
-              <Link to="/content/search">
+              <Link to="/content/browser">
                 <Btn label={'Register'} ripple={true} type={'succes'} className={'flat login-btn e-background-blue-400'} />
               </Link>
               <Text type={'a'} classes={'e-text-center e-subhead'}>

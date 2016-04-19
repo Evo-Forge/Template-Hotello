@@ -20,7 +20,7 @@ class HotelloHome extends React.Component {
         return (
 
           <Block>
-          <Link to={'/content/browser'}>
+          <Link to={'/content/login'}>
             <Block classes={'hotello-home'}>
               <Block classes={'e-background-light-green-500 full-h flex'} >
                 <Block className={'e-text-center'}>

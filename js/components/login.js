@@ -20,7 +20,7 @@ class HotelloLogin extends React.Component {
               <Block classes={'e-align-column e-padding-30'}>
                 <Input type={'text'} name={'label'} label={'Email or Username'}/>
                 <Input type={'text'} name={'label'} label={'Password'}/>
-                <Link to="/content/search">
+                <Link to="/content/browser">
                   <Btn label={'Login'} ripple={true} type={'succes'} className={'flat login-btn e-background-light-green-500'} />
                 </Link>
                 <Text type={'a'} classes={'e-text-center e-subhead e-padding-20'}>
