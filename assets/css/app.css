@@ -25,6 +25,41 @@
 .hotello-header .padding-left-20 {
   padding-left: 20px;
 }
+.hotello-header .acordeonMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hotello-header .acordeonMenu ul {
+  display: none;
+}
+.hotello-header .acordeonMenu input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.hotello-header .acordeonMenu label,
+.hotello-header .acordeonMenu a {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+.hotello-header .acordeonMenu label:hover span,
+.hotello-header .acordeonMenu a:hover span,
+.hotello-header .acordeonMenu label:hover i,
+.hotello-header .acordeonMenu a:hover i {
+  color: #FFA747 ;
+}
+.hotello-header .acordeonMenu label i {
+  position: absolute;
+  right: 0;
+  line-height: 40px;
+  font-size: 30px;
+}
+.hotello-header .acordeonMenu input[type=checkbox]:checked + label + ul {
+  display: block;
+}
 body {
   margin: 0;
 }
