@@ -22,7 +22,7 @@ class HotelloInfo extends React.Component {
             <Block classes={'hotello-info'}>
                 <Block classes={'e-background-blue-grey-900 flex start header-h'}>
                   <Link to="/content/description">
-                    <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close no-margin'} />
+                    <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close e-no-margin'} />
                   </Link>
                   <Block classes={'center-header flex '}>
                     <Image src={'../assets/img/call.png'} className={'logo-img padding-col'}/>
@@ -40,7 +40,7 @@ class HotelloInfo extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                     </Block>
                     <Text type={'p'} classes={'e-text-center e-text-grey-200 e-caption'}>RATING: 85 din 100</Text>
-                    <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title margin-top-15'}>Apple Tree Hotel</Text>
+                    <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title e-margin-top-15'}>Apple Tree Hotel</Text>
                     <Block className={'e-text-center'}>
                       <Icon name={"communication-location-on"} className={"e-text-light-green-500"} />
                       <Text type={'span'} classes={'e-text-left e-body1 e-text-grey-100'}>Barcelona, UE</Text>
@@ -79,7 +79,7 @@ class HotelloInfo extends React.Component {
                 </List>
 
                 <Block className={''}>
-                  <Text type={'h2'} classes={'e-text-center e-body2 e-text-uppercase margin-top-15'}> Room info </Text>
+                  <Text type={'h2'} classes={'e-text-center e-body2 e-text-uppercase e-margin-top-15'}> Room info </Text>
                   <Block classes={'align-row padding-row'}>
                     <Text type={'p'} classes={'e-text-left e-body1'}><b>Room Type</b></Text>
                     <Text type={'p'} classes={'e-text-center e-text-light-green-500 e-body1'}><b>Selected by hotel</b></Text>
@@ -97,7 +97,7 @@ class HotelloInfo extends React.Component {
                     <Text type={'p'} classes={'e-text-center e-text-light-green-500 e-body1'}><b>$2061</b></Text>
                   </Block>
 
-                  <Text type={'h2'} classes={'e-text-center e-body2 e-text-uppercase margin-top-15'}> Guest info </Text>
+                  <Text type={'h2'} classes={'e-text-center e-body2 e-text-uppercase e-margin-top-15'}> Guest info </Text>
                   <Block className={'padding-row flex wrap'}>
                     <Input type={'text'} name={'label'} placeholder={'Mr.Smith'} className={'full-w'}/>
                     <Input type={'text'} name={'label'} placeholder={'John'} className={'full-w'}/>
@@ -105,7 +105,7 @@ class HotelloInfo extends React.Component {
                     <Input type={'email'} name={'label'} placeholder={'jsmith@email.ue'} className={'full-w'}/>
                     <Input type={'text'} name={'label'} placeholder={'Voucher Code'} className={'full-w'}/>
                     <Link to="/content/payment">
-                      <Btn label={'Continue order'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin margin-b-15'} />
+                      <Btn label={'Continue order'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w e-no-margin e-margin-bottom-15'} />
                     </Link>
                   </Block>
                 </Block>

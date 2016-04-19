@@ -9,7 +9,7 @@ var tabs = {
  'header': [
    { 'context': (<Text classes={'e-text-grey-900 e-text-uppercase'}>Credit Card</Text>) },
    { 'context': (<Image src={'../assets/img/wallet-logo.png'} classes={'e-img-rsp'}/>) },
-   { 'context': (<Image src={'../assets/img/paypal-logo.jpg'} classes={'e-img-rsp'}/>) },
+   { 'context': (<Image src={'../assets/img/rsz_paypal.jpg'} classes={'e-img-rsp'}/>) },
    { 'context': (<Text classes={'e-background-yellow-500 e-text-grey-900'}>
                   <Text type={'p'}>ATM</Text>
                   <Text type={'p'}>TRANSFER</Text>
