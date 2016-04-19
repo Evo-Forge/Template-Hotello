@@ -1,3 +1,61 @@
-.HotelloReservation {
-
+.hotello-reservation {
+  .e-align-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .e-align-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .e-border-bottom {
+    border-bottom: 1px solid #eee;
+  }
+  .e-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .e-stretch {
+    display: flex;
+    align-items: stretch;
+  }
+  .e-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reservation-item {
+    height: 100px;
+    h2 {
+      margin-bottom: 0;
+    }
+    .reservation-no {
+      width: 80px;
+      height: 100px;
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .e-caption {
+      font-size: 1rem;
+    }
+    button {
+      border-radius: 0;
+      background-color: #FFF;
+      height: 100px;
+      min-width: 30px;
+      font-size: 40px;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+    .delete-btn {
+      font-size: 30px;
+      color: #FFF!important;
+      background-color: #FF3C38;
+      height: 100px;
+      width: 100px;
+      margin: 0;
+    }
+  }
 }

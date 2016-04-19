@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassNames from 'classnames';
+import { Link } from 'react-router';
 
 import { AppBar, Block, Btn, Dialog, DialogHeader, DialogContent, DialogFooter, Divider, Icon, Image, Navigation, Text, Utils, Menu, List, ListItem,Switch } from 'react-essence';
 
@@ -20,47 +21,61 @@ class HotelloNavigation extends React.Component {
 
   render() {
     return (
-      <Navigation className={'e-background-teal-A700'}visible={this.state.open}>
-        <Block className={'padding-left-20 e-margin-top-25 e-margin-bottom-25'}>
-          <Text className={'e-text-white e-title'}>
-            Caterit
-          </Text>
+      <Navigation className={'e-background-grey-100'} visible={this.state.open}>
+        <Block className={'e-padding-10 nav-bg e-align-row'}>
+          <Block>
+            <Icon name={"image-brightness-1"} className={"e-text-grey-900 e-background-grey-900"} />
+          </Block>
+          <Block>
+            <Text type={'h3'} className={'e-text-grey-100 e-title'}>
+              Hello, There!
+            </Text>
+            <Text type={'p'} className={'e-text-grey-100 e-caption'}>
+              You might wanna login first
+            </Text>
+          </Block>
         </Block>
   			<List type={'navigation'} className={'nav-ul e-body1'}>
   				<ListItem>
-  				 <Text type={'a'}>
-  					<Block classes={'content e-left e-text-white'}>MY ORDERS</Block>
-  				 </Text>
+            <Link to="/content/s-result">
+    					<Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Make A Reservation</Block>
+           </Link>
   				</ListItem>
-  				<Divider classes={'thinnest e-background-grey-200 e-text-center'} />
+  				<Divider classes={'thinnest e-background-grey-300 e-text-center'} />
+  			 <ListItem>
+         <Link to="/content/reservation">
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>My Reservations</Block>
+          </Link>
+  			 </ListItem>
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>ORDER HISTORY</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>My Subscribe</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
+  			 <ListItem>
+         <Link to="/content/voucher">
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Voucher Redeem</Block>
+          </Link>
+  			 </ListItem>
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>PAYMENT DETAILS</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Setting</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+  			 <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
   				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>DELIVERY ADDRESSES</Block>
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>Help Center</Block>
   				</Text>
   			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
+         <Divider classes={'thinnest e-background-grey-300 e-text-center adjust-divider'} />
   			 <ListItem>
-  				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>ABOUT</Block>
-  				</Text>
-  			 </ListItem>
-  			 <Divider classes={'thinnest e-background-grey-200 e-text-center adjust-divider'} />
-  			 <ListItem>
-  				<Text type={'a'}>
-  				 <Block classes={'content e-left e-text-white'}>LOG OUT</Block>
-  				</Text>
+         <Link to="/content/login">
+  				 <Block classes={'content e-left e-text-grey-900 e-text-uppercase'}>LogIn / Register</Block>
+          </Link>
   			 </ListItem>
   		 </List>
      </Navigation>
@@ -89,12 +104,14 @@ class HotelloHeader extends React.Component {
   render() {
       return (
         <Block classes={'hotello-header e-text-white'}>
-          <AppBar className={'e-text-white e-align-row e-background-grey-800 e-text-center'}>
-            <Btn icon={"navigation-menu"} className={"e-left e-text-grey-100 e-background-grey-800"} onClick={this.showNavigation.bind(this)} />
+          <AppBar className={'e-text-white e-align-row e-background-blue-grey-900 e-text-center'}>
+            <Btn icon={"navigation-menu"} className={"e-left e-text-grey-100 e-background-blue-grey-900"} onClick={this.showNavigation.bind(this)} />
 
             <Text className={'e-text-center e-text-grey-100 e-headline e-text-uppercase'}>hotello</Text>
 
-            <Btn icon={"action-search"} className={"e-text-grey-100 e-right e-background-grey-800"} />
+            <Link to="/content/s-result">
+              <Btn icon={"action-search"} className={"e-text-grey-100 e-right e-background-blue-grey-900"} />
+            </Link>
           </AppBar>
           <HotelloNavigation visible={this.state.navigation} />
         </Block>

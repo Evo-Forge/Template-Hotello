@@ -1,0 +1,59 @@
+.hotello-voucher {
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.wrap {
+      flex-wrap: wrap;
+    }
+    &.start {
+      justify-content: flex-start;
+    }
+  }
+  .block-h {
+    height: calc(100vh-7.042253);
+    padding: 0 15px;
+  }
+  .bg-voucher {
+    background: linear-gradient( rgba(0, 4, 0, 0.2), rgba(0, 4, 0, 0.2) ), url('../img/voucher.jpg') no-repeat;
+    background-size: cover;
+  }
+  .header-h {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+  }
+  .close-bg {
+    background: inherit;
+    &.fab-mini {
+      box-shadow: none;
+      &:hover:not(.flat) {
+        box-shadow: none;
+      }
+    }
+  }
+  .padding-row {
+    padding: 5px 15px;
+  }
+  .full-w {
+    width: 100%;
+  }
+  .white {
+    .e-input-group .e-input:not(textarea):not(select),
+    .e-input:not(textarea):not(select) {
+      color: #eee;
+    }
+    input {
+      &::-webkit-input-placeholder {
+      color: #eee;
+      }
+    }
+  }
+  .center-palceholder {
+    input {
+      &::-webkit-input-placeholder {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.hotello-success {
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.wrap {
+      flex-wrap: wrap;
+    }
+    &.start {
+      justify-content: flex-start;
+    }
+  }
+  .full-h {
+    height: 100vh;
+    img {
+      width: 100px;
+    }
+  }
+  .bg-end {
+    background: url('../img/the-end.jpg') center center no-repeat;
+    background-size: cover;
+    img {
+      width: 60px;
+    }
+  }
+  .header-h {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+  }
+  .close-bg {
+    background: inherit;
+    &.fab-mini {
+      box-shadow: none;
+      &:hover:not(.flat) {
+        box-shadow: none;
+      }
+    }
+  }
+}
