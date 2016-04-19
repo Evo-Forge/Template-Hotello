@@ -125,7 +125,7 @@ class HotelloDescription extends React.Component {
             <Block classes={'bg-big e-flex-container e-align-column e-space-between'}>
               <Block classes={'e-align-row e-space-between'}>
                 <Block>
-                  <Link to="/content/browser">
+                  <Link to="/content/results">
                     <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
                   </Link>
                 </Block>

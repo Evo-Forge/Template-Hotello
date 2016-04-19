@@ -64,7 +64,7 @@ var tabs = {
     </Text>
    </Block>
    ),
-   (<Text>This is the context for Tab with callback link</Text>)
+   (<Text>Pay with ATM Transfer</Text>)
  ]
 };
 
