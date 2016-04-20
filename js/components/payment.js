@@ -64,7 +64,7 @@ var tabs = {
     </Text>
    </Block>
    ),
-   (<Text>This is the context for Tab with callback link</Text>)
+   (<Text>Pay with ATM Transfer</Text>)
  ]
 };
 
@@ -73,6 +73,15 @@ class HotelloPayment extends React.Component {
     render() {
         return (
           <Block classes={'hotello-payment'}>
+            <Block classes={'e-background-blue-grey-900 flex start header-h'}>
+              <Link to="/content/info">
+                <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-blue-grey-900 e-text-grey-100 icon-close e-no-margin'} />
+              </Link>
+              <Block classes={'center-header flex '}>
+                <Image src={'../assets/img/call.png'} className={'logo-img padding-col'}/>
+                <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-100 inline'}><b>Payment Method</b></Text>
+              </Block>
+            </Block>
             <Tab
               data={tabs}
               classes={'e-background-grey-100 e-text-grey-50'}

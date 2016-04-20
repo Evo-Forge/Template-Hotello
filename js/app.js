@@ -29,7 +29,7 @@ import HotelloResults from './components/results';
 
 
 ReactDOM.render(
-	<Router history={browserHistory}>
+	<Router history={hashHistory}>
 		<Route path="/" component={HotelloHome} />
 		<Route path="content" component={HotelloContainer}>
 			<Route path='browser' component={HotelloBrowser} />

@@ -1,4 +1,38 @@
 .hotello-payment {
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.wrap {
+      flex-wrap: wrap;
+    }
+    &.start {
+      justify-content: flex-start;
+    }
+  }
+  .header-h {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+  }
+  .center-header {
+    margin: 0 auto;
+    padding-right: 35px;
+  }
+  .icon-close {
+    &.fab-mini {
+      box-shadow: none;
+      &:hover:not(.flat) {
+        box-shadow: none;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .logo-img {
+    width: 41px;
+  }
   .e-flex-container {
     display: flex;
     &.e-align-column {

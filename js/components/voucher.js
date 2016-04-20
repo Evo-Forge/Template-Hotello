@@ -31,7 +31,9 @@ class HotelloVoucher extends React.Component {
                   <Block classes={'padding-row'}>
                     <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-100'}>If you have a Voucher, please enter the code here:</Text>
                     <Input type={'text'} name={'label'} placeholder={'1254-MNYII-89753'} className={'full-w white center-palceholder'}/>
-                    <Btn label={'Continue order'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin'} />
+                    <Link to="/content/info">
+                      <Btn label={'Continue order'} ripple={true} type={'submit'} className={'flat e-button e-background-light-green-500 e-text-grey-100 full-w no-margin'} />
+                    </Link>
                   </Block>
                 </Block>
               </Block>

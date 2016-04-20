@@ -39,7 +39,7 @@ class HotelloInfo extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                       <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                     </Block>
-                    <Text type={'p'} classes={'e-text-center e-text-grey-200 e-caption'}>RATING: 85 din 100</Text>
+                    <Text type={'p'} classes={'e-text-center e-text-grey-200 e-caption'}>RATING: 85 of 100</Text>
                     <Text type={'h2'} classes={'e-text-center e-text-grey-100 e-title e-margin-top-15'}>Apple Tree Hotel</Text>
                     <Block className={'e-text-center'}>
                       <Icon name={"communication-location-on"} className={"e-text-light-green-500"} />

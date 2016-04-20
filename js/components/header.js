@@ -87,14 +87,12 @@ class HotelloHeader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dialog: false,
       navigation: false
     };
   }
 
   showNavigation() {
     this.setState({
-    dialog: false,
      navigation: true
     });
   }

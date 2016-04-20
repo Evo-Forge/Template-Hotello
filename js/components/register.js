@@ -11,7 +11,9 @@ class HotelloRegister extends React.Component {
         return (
           <Block classes={'hotello-login e-background-white'}>
             <Block classes={'e-text-center title'}>
-              <Btn icon={'navigation-close'} ripple={true} className={'e-left e-text-black e-background-white close-btn'} />
+              <Link to="/content/browser">
+                <Btn icon={'navigation-close'} ripple={true} className={'e-left e-text-black e-background-white close-btn'} />
+              </Link>
               <Text type={'span'} className={'e-text-center e-text-black e-title e-text-uppercase'}>register</Text>
             </Block>
             <Block classes={'e-align-column e-padding-30'}>
@@ -19,7 +21,9 @@ class HotelloRegister extends React.Component {
               <Input type={'text'} name={'label'} label={'Password'}/>
               <Input type={'text'} name={'label'} label={'First Name'}/>
               <Input type={'text'} name={'label'} label={'Last Name'}/>
-              <Btn label={'Register'} ripple={true} type={'succes'} className={'flat e-background-blue-400'} />
+              <Link to="/content/browser">
+                <Btn label={'Register'} ripple={true} type={'succes'} className={'flat login-btn e-background-blue-400'} />
+              </Link>
               <Text type={'a'} classes={'e-text-center e-subhead'}>
                 Have an account?
               </Text>
