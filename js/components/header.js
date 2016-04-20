@@ -102,14 +102,16 @@ class HotelloHeader extends React.Component {
   render() {
       return (
         <Block classes={'hotello-header e-text-white'}>
-          <AppBar className={'e-text-white e-align-row e-background-blue-grey-900 e-text-center'}>
-            <Btn icon={"navigation-menu"} className={"e-left e-text-grey-100 e-background-blue-grey-900"} onClick={this.showNavigation.bind(this)} />
+          <AppBar className={'e-text-white e-background-blue-grey-900'}>
+            <Block className={'e-align-row'}>
+              <Btn icon={"navigation-menu"} className={"e-text-grey-100 e-background-blue-grey-900"} onClick={this.showNavigation.bind(this)} />
 
-            <Text className={'e-text-center e-text-grey-100 e-headline e-text-uppercase'}>hotello</Text>
+              <Text className={'e-text-center e-text-grey-100 e-headline e-text-uppercase'}>hotello</Text>
 
-            <Link to="/content/s-result">
-              <Btn icon={"action-search"} className={"e-text-grey-100 e-right e-background-blue-grey-900"} />
-            </Link>
+              <Link to="/content/s-result">
+                <Btn icon={"action-search"} className={"e-text-grey-100 e-background-blue-grey-900 e-v-end"} />
+              </Link>
+            </Block>
           </AppBar>
           <HotelloNavigation visible={this.state.navigation} />
         </Block>

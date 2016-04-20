@@ -79,7 +79,7 @@ class HotelloPayment extends React.Component {
               </Link>
               <Block classes={'center-header flex '}>
                 <Image src={'../assets/img/call.png'} className={'logo-img padding-col'}/>
-                <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-100 inline'}><b>Payment Method</b></Text>
+                <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-100 inline e-no-margin'}><b>Payment Method</b></Text>
               </Block>
             </Block>
             <Tab

@@ -23,7 +23,7 @@ class HotelloSuccess extends React.Component {
               <Block classes={'full-h bg-end'}>
                 <Block classes={'header-h flex start'}>
                   <Link to="/content/browser">
-                    <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-blue-grey-900 no-margin'} />
+                    <Btn icon={"navigation-close"} ripple={true} type={'fab-mini'} className={'fab-mini close-bg e-text-blue-grey-900 e-no-margin'} />
                   </Link>
                 </Block>
                 <Block classes={'e-text-center margin-b-15 padding-15'}>

@@ -126,12 +126,12 @@ class HotelloDescription extends React.Component {
               <Block classes={'e-align-row e-space-between'}>
                 <Block>
                   <Link to="/content/results">
-                    <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
+                    <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100 e-no-margin'} />
                   </Link>
                 </Block>
                 <Block>
                   <Text type={'h3'} classes={'e-text-grey-100 e-title'}>Hilton Hotel & Resort</Text>
-                  <Block className={'e-text-left'}>
+                  <Block className={'e-text-left margin-t--7'}>
                     <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                     <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
                     <Icon name={"action-star-rate"} className={"e-text-yellow-700 inline"} />
@@ -140,7 +140,7 @@ class HotelloDescription extends React.Component {
                   </Block>
                 </Block>
                 <Block>
-                  <Btn icon={'action-favorite'} onClick={this.showToast.bind(this)} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100'} />
+                  <Btn icon={'action-favorite'} onClick={this.showToast.bind(this)} ripple={true} type={'fab-mini'} className={'fab-mini btn-adjust e-text-grey-100 e-no-margin'} />
                 </Block>
                 <Toast
                   delay={this.state.delay}

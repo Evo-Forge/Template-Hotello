@@ -1,3 +1,6 @@
+.hotello-header .e-appbar {
+  box-shadow: none;
+}
 .hotello-header .e-align-row {
   display: flex;
   flex-direction: row;
@@ -417,6 +420,11 @@ body {
 .hotello-login .close-btn:focus {
   background-color: #FFF;
 }
+.hotello-login .login-btn {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
 .hotello-login .e-input-group .e-input {
   border-bottom: 1px solid #b9b9b9;
 }
@@ -526,6 +534,11 @@ body {
   background-color: #FFF;
   outline: none;
 }
+.hotello-register .login-btn {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
 .hotello-register .e-input-group .e-input {
   border-bottom: 1px solid #b9b9b9;
 }
@@ -557,6 +570,41 @@ body {
   margin-left: -54%;
   position: absolute;
   z-index: 1;
+}
+.hotello-payment .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hotello-payment .flex.wrap {
+  flex-wrap: wrap;
+}
+.hotello-payment .flex.start {
+  justify-content: flex-start;
+}
+.hotello-payment .header-h {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+}
+.hotello-payment .center-header {
+  margin: 0 auto;
+  padding-right: 35px;
+}
+.hotello-payment .icon-close.fab-mini {
+  box-shadow: none;
+}
+.hotello-payment .icon-close.fab-mini:hover:not(.flat) {
+  box-shadow: none;
+}
+.hotello-payment .icon-close:focus {
+  outline: none;
+}
+.hotello-payment .logo-img {
+  width: 41px;
+}
+.hotello-payment .padding-col {
+  padding: 0 5px;
 }
 .hotello-payment .e-flex-container {
   display: flex;
@@ -644,6 +692,9 @@ body {
 }
 .hotello-payment .e-tabs-container .e-card .paypal a {
   cursor: pointer;
+}
+.hotello-payment .e-tabs-container .e-shadow-1 {
+  box-shadow: none;
 }
 .hotello-description .e-line-through {
   text-decoration: line-through;
@@ -738,6 +789,9 @@ body {
 }
 .hotello-description .padding-tb-10 {
   padding: 10px 0;
+}
+.hotello-description .margin-t--7 {
+  margin-top: -7px;
 }
 .hotello-home .full-h {
   height: 100vh;
